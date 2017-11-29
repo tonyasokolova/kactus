@@ -12,11 +12,11 @@ paginate: 20
 domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
-disqus_shortname: 'your-disqus-shortname'
+disqus_shortname: 'Tonya'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         'Your Name'
+url:            'http://sokolovatonya.github.io'
+author:         'Antonina Sokolova'
 authorTwitter:  'YourTwitterUsername'
 
 permalink:       /:year/:title/
