@@ -1,9 +1,9 @@
 ---
-title: About
+title: Обо мне
 permalink: about/
 profile: true
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+Информация обо мне ...
 
 {% include footer.html %}
