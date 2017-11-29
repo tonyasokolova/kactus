@@ -1,7 +1,7 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2013-11-10 10:18:00
-description: Thriller Comedy Horror
+title:  "Первый пост"
+date:   2017-11-29 11:18:00
+description: Тестовая версия
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
