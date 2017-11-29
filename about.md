@@ -1,9 +1,10 @@
 ---
-title: Обо мне
+title: about
 permalink: about/
 profile: true
 ---
 
-Информация обо мне ...
+Всем привет!
+Меня зовут Тоня... 
 
 {% include footer.html %}
