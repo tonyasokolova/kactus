@@ -4,7 +4,6 @@ permalink: about/
 profile: true
 ---
 
-Всем привет!
-Меня зовут Тоня... 
+Что-то про меня
 
 {% include footer.html %}
