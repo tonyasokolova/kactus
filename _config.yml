@@ -1,6 +1,6 @@
 name: PentestBlog
-description: Blogging about pentest
-meta_description: "PentestBlog, Blogging about pentest"
+description: Всё о пентесте и безопасности
+meta_description: "PentestBlog, Всё о пентесте и безопасности"
 
 aboutPage: true
 
@@ -12,11 +12,11 @@ paginate: 20
 domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
-disqus_shortname: 'Tonya'
+disqus_shortname: 'Тоня'
 
 # Details for the RSS feed generator
 url:            'http://sokolovatonya.github.io'
-author:         'Antonina Sokolova'
+author:         'Антонина Соколова'
 authorVK:  'tonyasokolova'
 
 permalink:       /:year/:title/
