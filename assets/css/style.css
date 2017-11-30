@@ -113,8 +113,8 @@ nav.main-nav {
 
 	/*max-width: 600px;*/
 	/*width:100%;*/
-	background: #fff;
-	background: rgba(250,250,250,.90);
+	background: #f0f8ff;
+	background: rgba(240,248,250,.90);
 	margin: 0 auto;
 	text-align: right;
 	/*position: fixed;*/
@@ -298,7 +298,7 @@ pre	{
 	white-space:pre-wrap;
 	/*border: 1px solid #ddd;*/
 	padding:20px;
-	background-color:#fafafa;
+	background-color:#f0f8ff;
 	/*font-size:14px;*/
 	overflow:auto;
 	border-radius: 3px;
@@ -337,7 +337,7 @@ tr>td {
 }
 
 tr:nth-child(odd)>td {
-	background: #fcfcfc;
+	background: #f0f8ff;
 }
 
 thead th,th {
