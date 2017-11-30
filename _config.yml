@@ -17,7 +17,7 @@ disqus_shortname: 'Tonya'
 # Details for the RSS feed generator
 url:            'http://sokolovatonya.github.io'
 author:         'Antonina Sokolova'
-authorTwitter:  'YourTwitterUsername'
+authorVK:  'tonyasokolova'
 
 permalink:       /:year/:title/
 
