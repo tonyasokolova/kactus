@@ -9,6 +9,6 @@ profile: true
 
 Связаться со мной можно по почте: sokolovatonya96@mail.ru
 
-А также в телеграмме и вконтакте:  {% include share.html include share-vk.html %} 
+А также в телеграмме и вконтакте:  {% include share.html %}{% include share-vk.html %} 
 
 {% include footer.html %}
