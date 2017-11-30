@@ -1,5 +1,5 @@
 ---
-title: about
+title: обо мне
 permalink: about/
 profile: true
 ---
