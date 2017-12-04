@@ -1,7 +1,7 @@
 ---
-title:  "SQL injection"
+title:  "Перехват запросов"
 date:   2017-11-04 14:50:00
-description: Простая SQLi
+description: 
 ---
 
-SQL Injection - 
+
