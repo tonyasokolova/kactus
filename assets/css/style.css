@@ -198,6 +198,9 @@ li	{ list-style-type:circle; list-style-position:inside; }
 li:last-child {
 	padding-block-end: 30px
 }
+h3 {
+	padding-block-start: 20px
+}
 
 b, strong { font-weight: 500;
   color: #1E2025; }
