@@ -32,7 +32,7 @@ description:
 После стартовой строки идут **заголовки** (HTTP Headers) -- это строки в HTTP-сообщении, содержащие разделённую двоеточием пару параметр-значение.
 
 Разберем в нашем примере пару заголовков. Первый заголовок это хост (host) -- к какому сайту мы обращаемся, в данном случае tonyasokolova.github.io:
-*тут картинка*
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/1.PNG)
 
 Второй заголовок User-Agent -- клиентское приложение, в данном примере используется браузер mozilla firefox:
 *тут картинка*
