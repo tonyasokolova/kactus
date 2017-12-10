@@ -27,15 +27,15 @@ description:
 
 *Более подробный пример:*
  Например, мы заходим на сайт tonyasokolova.github.io, и мы хотим прочитать о владельце данного сайта. Мы нажимаем на *About*, т.е. мы обращаемся к tonyasokolova.github.io/about, в качестве URI у нас /about. Так как никаких пользовательских данных мы не передаем, то у нас метод GET. Версия HTTP обычно всегда 1.1. Таким образом стартовая строка будет выглядеть так:  
-*тут картинка*
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/1.PNG)
 
 После стартовой строки идут **заголовки** (HTTP Headers) -- это строки в HTTP-сообщении, содержащие разделённую двоеточием пару параметр-значение.
 
 Разберем в нашем примере пару заголовков. Первый заголовок это хост (host) -- к какому сайту мы обращаемся, в данном случае tonyasokolova.github.io:
-![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/1.PNG)
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/3.PNG)
 
 Второй заголовок User-Agent -- клиентское приложение, в данном примере используется браузер mozilla firefox:
-*тут картинка*
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/4.PNG)
 
 Остальные заголовки: Accept -- список допустимых форматов ресурса, Accept-Language -- список поддерживаемых языков, Сookie -- используется веб-серверами для того, чтобы различать пользователей и хранить данные о них.
 
@@ -51,8 +51,7 @@ description:
 3. **Пояснение** -- текстовое короткое пояснение к коду ответа для пользователя. Никак не влияет на сообщение и является необязательным.
 
 Продолжаем рассматривать наш пример. После нашего запроса к ресурсу мы получаем от сервера ответ. Стартовая строка ответа содержит версию 1.1. Код состояние у нас 200, т.е. наш запрос был успешным. И пояснение *OK* -- поясняет код состояния.
-
-*тут картинка*
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/2.PNG)
 
 Далее идут заголовки, а после заголовок идет тело сообщения (обратите внимание, что оно обязательно отделено хотя бы одной пустой строкой). В качестве тела сообщения сервер отправляет html-страницу, которая и отображает в итоге нужную нам информацию.
 
