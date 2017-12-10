@@ -35,7 +35,7 @@ description:
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/3.PNG)
 
 Второй заголовок User-Agent -- клиентское приложение, в данном примере используется браузер mozilla firefox:
-![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/8.PNG)
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/q.PNG)
 
 Остальные заголовки: Accept -- список допустимых форматов ресурса, Accept-Language -- список поддерживаемых языков, Сookie -- используется веб-серверами для того, чтобы различать пользователей и хранить данные о них.
 
