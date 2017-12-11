@@ -208,3 +208,4 @@ CSS-in-JS — новая технология, которая полностью
 * Пентестерам: пробуйте внедрить JavaScript, JSON и CSS везде где можно и смотрите результат;
 *	Разработчикам: никогда не используйте «eval()» или «dangerouslySetInnerHTML». Избегайте разбора пользовательского JSON. Никогда не интерполируйте ввод пользователя в свои таблицы стилей.
 
+P.S. Данная статья была написана на основе статей <a href="https://medium.com/dailyjs/exploiting-script-injection-flaws-in-reactjs-883fb1fe36c1">Бернарда Мюллера</a> и <a href="https://reactarmory.com/answers/how-can-i-use-css-in-js-securely">Джеймса Нельсона</a>.
