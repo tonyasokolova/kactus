@@ -8,7 +8,7 @@ React — популярная javascript-библиотека для созда
 
 В данной статье рассмотрим основные уязвимости, которые могут совершать разработчики при создании React-приложений. В React реализована защита по умолчанию от уязвимостей типа HTML-injection, так что разработчики зачастую “забывают” о других возможностях проведения XSS-атак. Также рассмотрим уязвимости типа “CSS injection” в CSS-in-JS библиотеках и способы их эксплуатации. 
 
-### Компоненты, свойства и элементы
+## Компоненты, свойства и элементы
 
 Компоненты позволяют разделить UI на независимые, повторно используемые части и работать с каждой из них отдельно.
 
@@ -60,7 +60,7 @@ React.createElement(
 Контроль над этими аргументами даёт злоумышленнику возможность реализовать различные вектора атак.
 
 
-### Внедрение дочерних узлов
+## Внедрение дочерних узлов
 
 В марте 2015 года Даниель Лешеминан опубликовал статью <a href="http://danlec.com/blog/xss-via-a-spoofed-react-element">«XSS через поддельный элемент React»</a>, в которой сообщалось о хранимой XSS в HackerOne. Проблема была вызвана тем, что веб-приложение HackerOne передавало объект, доступный для изменения пользователем, в качестве дочернего аргумента в функцию React.createElement(). Предположительно, уязвимый код выглядит следующим образом:
 
@@ -100,3 +100,26 @@ React.createElement("span", null, attacker_supplied_value);
 {% endhighlight %}
 
 В ноябре 2015 года данную проблему решили следующим образом: элементы React были теперь отмечены атрибутом «$$typeof: Symbol.for('react.element')». Поскольку невозможно ссылаться на глобальный JavaScript символ из внедренного объекта, метод инъекции дочерних элементов не работает. 
+
+
+## Внедрение Props
+
+Рассмотрим следующий код:
+
+{% highlight react %}
+// Parse attacker-supplied JSON for some reason and pass
+// the resulting object as props.
+// Don't do this at home unless you are a trained expert!
+
+attacker_props = JSON.parse(stored_value)
+
+React.createElement("span", attacker_props);
+{% endhighlight %}
+
+Здесь мы можем внедрить произвольное свойство (props) в новый элемент. Мы можем использовать следующий код для установки «dangerouslySetInnerHTML»:
+
+{% highlight react %}
+{"dangerouslySetInnerHTML" : { "__html": "<img src=x/
+onerror='alert(localStorage.access_token)'>"}}
+{% endhighlight %}
+
