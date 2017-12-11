@@ -14,7 +14,7 @@ React — популярная javascript-библиотека для созда
 
 Концептуально, компоненты подобны JavaScript функциям. Они принимают произвольные данные (называемые “props”) и возвращают React-элементы, описывающие что должно появиться на экране. Базовый компонент выглядит следующим образом:
 
-{% highlight javascript %}
+{% highlight jsx %}
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
@@ -24,8 +24,8 @@ class Welcome extends React.Component {
 
 Обратите внимание на синтаксис в операторе return: это _**JSX**_, расширение синтаксиса JavaScript, разработанное командой ReactJS. Этот формат используется для упрощения написания компонентов ReactJS. На этапе сборки-препроцессинга JSX транслируется в обычный JavaScript код. Следующие два примера идентичны: 
 
-{% highlight javascript %}
-<!-- JSX -->
+{% highlight jsx %}
+// JSX 
 
 const element = (
   <h1 className="greeting">
@@ -33,7 +33,7 @@ const element = (
   </h1>
 );
 
-<!-- Transpliled to createElement() call -->
+// Transpliled to createElement() call 
 
 const element = React.createElement(
   'h1',
@@ -44,7 +44,7 @@ const element = React.createElement(
 
 Новые элементы создаются с помощью функции createElement():
 
-{% highlight javascript %}
+{% highlight jsx %}
 React.createElement(
   type,
   [props],
