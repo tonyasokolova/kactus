@@ -58,3 +58,45 @@ React.createElement(
 *	“children” содержит дочерние выражения нового элемента.
 
 Контроль над этими аргументами даёт злоумышленнику возможность реализовать различные вектора атак.
+
+
+### Внедрение дочерних узлов
+
+В марте 2015 года Даниель Лешеминан опубликовал статью <a href="http://danlec.com/blog/xss-via-a-spoofed-react-element">«XSS через поддельный элемент React»</a>, в которой сообщалось о хранимой XSS в HackerOne. Проблема была вызвана тем, что веб-приложение HackerOne передавало объект, доступный для изменения пользователем, в качестве дочернего аргумента в функцию React.createElement(). Предположительно, уязвимый код выглядит следующим образом:
+
+* JSX:
+{% highlight react %}
+/* Retrieve a user-supplied, stored value from the server and parsed it as JSON for whatever reason.
+
+attacker_supplied_value = JSON.parse(some_user_input)
+*/
+
+render() {
+  return <span>{attacker_supplied_value}</span>;
+}
+{% endhighlight %}
+
+* JavaScript:
+{% highlight react %}
+React.createElement("span", null, attacker_supplied_value);
+{% endhighlight %}
+
+Когда «attacker_supplied_value» — строка, как ожидалось, на странице появлялся обычный span-элемент. Однако, функция «createElement()» в текущей версии ReactJS принимает простые объекты, переданные как дочерние. Даниель нашел уязвимость, передавая JSON объект. Он передал в нем поле «dangerouslySetInnerHTML», которое позволило вставить необработанный HTML в вывод React. Окончательный proof-of-concept выглядел так:
+
+{% highlight react %}
+{
+  _isReactElement: true,
+  _store: {}, 
+  type: "body",
+  props: {
+    dangerouslySetInnerHTML: {
+      __html:
+      "<h1>Arbitrary HTML</h1>
+      <script>alert(`No CSP Support :(`)</script>
+      <a href='http://danlec.com'>link</a>"
+    }
+  }
+}
+{% endhighlight %}
+
+В ноябре 2015 года данную проблему решили следующим образом: элементы React были теперь отмечены атрибутом «$$typeof: Symbol.for('react.element')». Поскольку невозможно ссылаться на глобальный JavaScript символ из внедренного объекта, метод инъекции дочерних элементов не работает. 
