@@ -66,5 +66,5 @@ description: В данной статье описана кратко прост
 
 ### Ссылки
 
-* https://ru.wikipedia.org/wiki/HTTP
-* https://habrahabr.ru/post/215117/
+* <a href="https://ru.wikipedia.org/wiki/HTTP">https://ru.wikipedia.org/wiki/HTTP</a>
+* <a href="https://habrahabr.ru/post/215117/">https://habrahabr.ru/post/215117/</a>
