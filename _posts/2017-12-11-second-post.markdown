@@ -23,11 +23,11 @@ print_hi('Tom')
 {% endhighlight %}
 
 {% highlight javascript %}
-class Welcome extends React.Component \{
-  render() \{
-    return <h1>hELLO, \{this.props.name\}</h1>;
-  \}
-\}
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
 {% endhighlight %}
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react1.jpg)
