@@ -64,3 +64,7 @@ description:
 
 На данный момент HTTPS поддерживается всеми популярными веб-браузерами. 
 
+### Ссылки
+
+1) https://ru.wikipedia.org/wiki/HTTP
+2) https://habrahabr.ru/post/215117/
