@@ -123,3 +123,51 @@ React.createElement("span", attacker_props);
 onerror='alert(localStorage.access_token)'>"}}
 {% endhighlight %}
 
+
+## "Классическая" XSS
+
+Некоторые традиционные XSS вектора также могут быть исполнены в приложениях с движком React. В данном разделе описаны анти-шаблоны.
+
+### Явная настройка «dangerouslySetInnerHTML»
+
+Разработчики могут нарочно установить свойство «dangerouslySetInnerHTML»:
+
+{% highlight react %}
+<div dangerouslySetInnerHTML={user_supplied} />
+{% endhighlight %}
+
+Контроль над значением этого свойства дает злоумышленнику внедрить любой JavaScript код.
+
+## Внедряемые атрибуты
+
+Контроль над атрибутом «href» динамически сгенерированного тега «a» дает возможность внедрить «javascript:». Некоторые другие атрибуты, такие как «formaction» в HTML5, также работают в современном браузере.
+
+{% highlight react %}
+<a href={userinput}>Link</a>
+
+<button form="name" formaction={userinput}>
+{% endhighlight %}
+  
+Следующий вектор также будет работать в современных браузерах:
+
+{% highlight react %}
+<link rel="import" href={user_supplied}>
+{% endhighlight %}
+
+
+## Рендеринг HTML на стороне сервера
+
+Для улучшения начального времени загрузки страницы в последнее время наблюдается тенденция создавать ReactJS страницы с предварительным рендерингом на сервере. В ноябре 2016 года <a href="https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0">Эмилия Смит</a> отметила, что официальный пример Redux кода для серверного рендеринга приводит к XSS, так как состояние клиента было соединено со страницей, так как клиентская часть подготавливается к рендерингу без санитизации данных (с тех пор пример был исправлен).
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react4.jpg)
+
+Вывод: если сделать пререндеринг HTML страницы на стороне сервера, то можно заметить те же типы XSS, как и в “обычных” веб-приложениях.
+
+Вредоносная полезная нагрузка:
+
+{% highlight react %}
+preloadedState = {
+  attacker_supplied :
+    "xss</script><script>alert(1)</script>"
+}
+{% endhighlight %}
