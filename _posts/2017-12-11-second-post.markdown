@@ -14,8 +14,20 @@ React — популярная javascript-библиотека для созда
 
 Концептуально, компоненты подобны JavaScript функциям. Они принимают произвольные данные (называемые “props”) и возвращают React-элементы, описывающие что должно появиться на экране. Базовый компонент выглядит следующим образом:
 
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
 {% highlight javascript %}
-class Welcome extends React.Component 
+class Welcome extends React.Component \{
+  render() \{
+    return <h1>hELLO, \{this.props.name\}</h1>;
+  \}
+\}
 {% endhighlight %}
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react1.jpg)
