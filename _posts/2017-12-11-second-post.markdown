@@ -44,4 +44,10 @@ const element = React.createElement(
 
 Новые элементы создаются с помощью функции createElement():
 
-
+{% highlight javascript %}
+React.createElement(
+  type,
+  [props],
+  [...children]
+)
+{% endhighlight %}
