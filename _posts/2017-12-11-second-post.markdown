@@ -1,4 +1,4 @@
-<!-- ---
+---
 title:  "Основные проблемы безопасности при использовании ReactJS"
 date:   2017-12-10 15:20:00
 description: 
@@ -19,4 +19,4 @@ React — популярная javascript-библиотека для созда
 Обратите внимание на синтаксис в операторе return: это _**JSX**_, расширение синтаксиса JavaScript, разработанное командой ReactJS. Этот формат используется для упрощения написания компонентов ReactJS. На этапе сборки-препроцессинга JSX транслируется в обычный JavaScript код. Следующие два примера идентичны: 
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react2.jpg)
--->
+
