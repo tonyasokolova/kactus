@@ -1,6 +1,6 @@
 ---
 title:  "Основные проблемы безопасности при использовании ReactJS"
-date:   2017-12-10 15:20:00
+date:   2017-12-11 16:20:00
 description: 
 ---
 
@@ -8,7 +8,7 @@ React — популярная javascript-библиотека для созда
 
 В данной статье рассмотрим основные уязвимости, которые могут совершать разработчики при создании React-приложений. В React реализована защита по умолчанию от уязвимостей типа HTML-injection, так что разработчики зачастую “забывают” о других возможностях проведения XSS-атак. Также рассмотрим уязвимости типа “CSS injection” в CSS-in-JS библиотеках и способы их эксплуатации. 
 
-# **Компоненты, свойства и элементы**
+### Компоненты, свойства и элементы
 
 Компоненты позволяют разделить UI на независимые, повторно используемые части и работать с каждой из них отдельно.
 
@@ -20,3 +20,6 @@ React — популярная javascript-библиотека для созда
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react2.jpg)
 
+Новые элементы создаются с помощью функции createElement():
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react3.jpg)
