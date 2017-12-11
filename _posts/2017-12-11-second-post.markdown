@@ -22,12 +22,26 @@ class Welcome extends React.Component {
 }
 {% endhighlight %}
 
-![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react1.jpg)
-
 Обратите внимание на синтаксис в операторе return: это _**JSX**_, расширение синтаксиса JavaScript, разработанное командой ReactJS. Этот формат используется для упрощения написания компонентов ReactJS. На этапе сборки-препроцессинга JSX транслируется в обычный JavaScript код. Следующие два примера идентичны: 
 
-![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react2.jpg)
+{% highlight javascript %}
+// JSX
+
+const element = (
+  <h1 className="greeting">
+  Hello, world!
+  </h1>
+);
+
+// Transpliled to createElement() call
+
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+{% endhighlight %}
 
 Новые элементы создаются с помощью функции createElement():
 
-![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react3.jpg)
+
