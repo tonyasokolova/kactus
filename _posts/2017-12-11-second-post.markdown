@@ -14,7 +14,7 @@ React — популярная javascript-библиотека для созда
 
 Концептуально, компоненты подобны JavaScript функциям. Они принимают произвольные данные (называемые “props”) и возвращают React-элементы, описывающие что должно появиться на экране. Базовый компонент выглядит следующим образом:
 
-{% highlight javascript %}class Welcome extends React.Component {{% endhighlight %}
+{% highlight javascript %}class Welcome extends React.Component { } {% endhighlight %}
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/react1.jpg)
 
 Обратите внимание на синтаксис в операторе return: это _**JSX**_, расширение синтаксиса JavaScript, разработанное командой ReactJS. Этот формат используется для упрощения написания компонентов ReactJS. На этапе сборки-препроцессинга JSX транслируется в обычный JavaScript код. Следующие два примера идентичны: 
