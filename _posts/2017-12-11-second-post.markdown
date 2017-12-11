@@ -14,7 +14,7 @@ React — популярная javascript-библиотека для созда
 
 Концептуально, компоненты подобны JavaScript функциям. Они принимают произвольные данные (называемые “props”) и возвращают React-элементы, описывающие что должно появиться на экране. Базовый компонент выглядит следующим образом:
 
-{% highlight js %}
+{% highlight react.js %}
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
