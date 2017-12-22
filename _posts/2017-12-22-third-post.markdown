@@ -48,8 +48,22 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp8.PNG)
 
-Заходим в burp и смотрим, что мы получили некоторые данные - это и есть перехваченный запрос (см. картинку ниже). Он содержит стартовую строку и заголовки. Чтобы посмотреть дальше (следующие запросы, если они есть), нужно нажать **Forward**. Также можно выключить Intercept  и просматривать трафик во вкладке **HTTP History**.
+Заходим в burp и смотрим, что мы получили некоторые данные - это и есть перехваченный запрос (см. картинку ниже). Он содержит стартовую строку и заголовки. Чтобы посмотреть дальше (следующие запросы, если они есть), нужно нажать **Forward**. Также можно выключить Intercept  и просматривать трафик во вкладке **HTTP history**.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp7.PNG)
+
+*Перехват https трафика*
+
+Большинство нужных нам сайтов защищены, а именно используют https. Так как быть в этом случае? Всё довольно просто. Нам надо сделать дополнительные настройки, а именно загрузить сертификат бурпа в браузер.
+
+И так, скачать сертификат можно двумя способами.
+
+**Способ 1.** В браузере в адресной строке вводим либо http://burp, либо 127.0.0.1:8080 и нажимаем на **CA Certificate**:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp9.PNG)
+
+Далее выскакивает окно, где нажимаем сохранить: 
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp10.PNG)
 
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
