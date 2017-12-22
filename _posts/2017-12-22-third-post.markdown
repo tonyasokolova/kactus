@@ -36,4 +36,8 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp5.PNG)
 
+*Перехват http трафика*
+
+Всё, теперь у нас всё настроено, можем перехватывать http трафик.
+
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
