@@ -54,7 +54,7 @@ description: Как пользоваться Burp Suite.
 
 *Перехват https трафика*
 
-Большинство нужных нам сайтов защищены, а именно используют https. Так как быть в этом случае? Всё довольно просто. Нам надо сделать дополнительные настройки, а именно загрузить сертификат бурпа в браузер.
+Большинство нужных нам сайтов защищены, а именно используют https. Как быть в этом случае? Всё довольно просто. Нам надо сделать дополнительные настройки, а именно загрузить сертификат бурпа в браузер.
 
 И так, скачать сертификат можно двумя способами.
 
@@ -65,5 +65,9 @@ description: Как пользоваться Burp Suite.
 Далее выскакивает окно, где нажимаем сохранить: 
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp10.PNG)
+
+**Способ 2.** В Burp Suite зайти во вкладку **Options** и нажать на **Generate CA certificate**:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp11.PNG)
 
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
