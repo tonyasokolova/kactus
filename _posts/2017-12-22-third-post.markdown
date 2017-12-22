@@ -20,4 +20,9 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp2.PNG)
 
+Перед нами выводится окно. Там мы прописываем нужный нам порт (в нашем случае это 8080), выбираем нужный ip (а именно 127.0.0.1) и нажимаем **ok**:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp3.PNG)
+
+
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
