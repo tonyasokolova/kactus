@@ -32,4 +32,8 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp4.PNG)
 
+В появившемся окне вводим настройки такие же как на картинке ниже и нажимаем **ok**:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp5.PNG)
+
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
