@@ -20,9 +20,16 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp2.PNG)
 
-Перед нами выводится окно. Там мы прописываем нужный нам порт (в нашем случае это 8080), выбираем нужный ip (а именно 127.0.0.1) и нажимаем **ok**:
+Перед нами выводится окно. Там мы прописываем нужный нам порт (в нашем случае это 8080), выбираем нужный адрес (а именно 127.0.0.1) и нажимаем **ok**:
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp3.PNG)
 
+*Настройка браузера*
+
+Настройки Burp Suite недостаточно. Чтобы перехватить трафик, нам необходимо настроить браузер.
+
+И так, открываем браузер и заходим в настройки. Находим в нашем браузере настройки сети (в разных браузерах может быть по-разному):
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp4.PNG)
 
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
