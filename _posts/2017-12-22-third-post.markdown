@@ -12,6 +12,8 @@ description: Как пользоваться Burp Suite.
 
 *Настройка в Burp Suite*
 
-Первое, что мы делаем, это запускаем сам Burp Suite. После чего во вкладке 
+Первое, что мы делаем, это запускаем сам Burp Suite. После чего во вкладке **Proxy** переходим во вкладку **Options**, как показано на картинке ниже, и проверяем верный ли интерфейс у нас стоит (должен быть 127.0.0.1:8080):
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp1.PNG)
 
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
