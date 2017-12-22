@@ -20,7 +20,7 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp2.PNG)
 
-Перед нами выводится окно. Там мы прописываем нужный нам порт (в нашем случае это 8080), выбираем нужный адрес (а именно 127.0.0.1) и нажимаем **ok**:
+Перед нами выводится окно. Там мы прописываем нужный нам порт (в нашем случае это 8080), выбираем нужный адрес (а именно 127.0.0.1) и нажимаем **OK**:
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp3.PNG)
 
@@ -32,12 +32,24 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp4.PNG)
 
-В появившемся окне вводим настройки такие же как на картинке ниже и нажимаем **ok**:
+В появившемся окне вводим настройки такие же как на картинке ниже и нажимаем **OK**:
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp5.PNG)
 
 *Перехват http трафика*
 
 Всё, теперь у нас всё настроено, можем перехватывать http трафик.
+
+В burp переходим во вкладку **Intercept** и включаем перехват:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp6.PNG)
+
+Ищем любой незащищенный сайт с протоколом http и заходим на него в браузере. Видим, что сайт долго прогружается, это значит что запрос перехвачен с помощью burp.
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp8.PNG)
+
+Заходим в burp и смотрим, что мы получили некоторые данные - это и есть перехваченный запрос (см. картинку ниже). Он содержит стартовую строку и заголовки. Чтобы посмотреть дальше (следующие запросы, если они есть), нужно нажать **Forward**. Также можно выключить Intercept  и просматривать трафик во вкладке **HTTP History**.
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp7.PNG)
 
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
