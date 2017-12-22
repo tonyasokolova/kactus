@@ -83,4 +83,12 @@ description: Как пользоваться Burp Suite.
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp16.PNG) 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp15.PNG) 
 
-PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
+### Другие возможности Burp Suite
+
+Можно собирать информацию об архитектуре веб-приложения, используя spider, также есть возможность перебирать пароли с помощью Intruder, сканировать приложение на наличие уязвимостей и т.д. Но подробности всех этих возможностей будут описываться в других статьях.
+
+### Итоги
+
+Подведем итоги. В данной статье мы познакомились с программой Burp Suite. И узнали как перехватывать http и https трафик с помощью этой программы (настроили программу и наш браузер для перехвата данных).
+
+PS Все настройки в данной статье были воспроизведены на ОС kali linux и в браузере Firefox.
