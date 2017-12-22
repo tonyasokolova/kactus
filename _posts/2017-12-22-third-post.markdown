@@ -16,4 +16,8 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp1.PNG)
 
+Если же нужного интерфейса у нас нет, то нажимаем на **Add**:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp2.PNG)
+
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
