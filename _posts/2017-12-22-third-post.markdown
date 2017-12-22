@@ -70,4 +70,12 @@ description: Как пользоваться Burp Suite.
 
 ![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp11.PNG)
 
+Теперь этот сертификат надо загрузить в браузер. Опять же в настройках ищем место, где говорится про сертификаты, нажимаем на просмотр сертификатов:
+
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp12.PNG)
+
+ И добавляем наш сертификат (нажимаем на **import**, ищем куда мы сохранили сертификат и добавляем):
+ 
+![index page](https://raw.githubusercontent.com/tonyasokolova/tonyasokolova.github.io/master/assets/images/burp13.PNG) 
+
 PS Все настройки были воспроизведены на ОС kali linux и в браузере Firefox.
